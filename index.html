@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to the wedding website for JB & Joanna. Explore photos and event information for their special day." />
+    <title>JB &amp; Joanna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="JB and Joanna home">JB <span>&amp;</span> Joanna</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="active" href="#schedule">Schedule</a>
+        <a href="#gallery">Our Gallery</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-art" role="img" aria-label="A quiet garden path framed by soft foliage"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Together with their families</p>
+          <h1 id="hero-title">JB <span>&amp;</span> Joanna</h1>
+          <p class="hero-tagline">We humbly request your presence to rejoice and celebrate with us as we place our love and future in His hands.</p>
+          <div class="hero-meta">
+            <p>Saturday, October 24, 2026</p>
+            <p><a class="venue-link" href="https://maps.app.goo.gl/hYEvdNAvRUYPMJAL7" target="_blank" rel="noopener noreferrer">Bypass Rd., San Vicente, Tarlac City, Hermanos Restaurant</a></p>
+          </div>
+          <a class="button button-light" href="#schedule">Explore our day</a>
+        </div>
+      </section>
+
+      <section class="section schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading">
+          <p class="eyebrow">The day we say I do</p>
+          <h2 id="schedule-title">Schedule</h2>
+        </div>
+        <div class="schedule-grid">
+          <article class="event-card ceremony-card">
+            <div class="event-number">01</div>
+            <p class="event-kicker">Saturday, October 24, 2026</p>
+            <h3>Our Wedding Ceremony</h3>
+            <p class="event-time">4:00 PM</p>
+            <div class="event-actions"><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Wedding+of+JB+%26+Joanna&amp;dates=20261024T150000%2F20261024T170000&amp;details=Wedding+ceremony+at+Hermanos+Restaurant&amp;location=Hermanos+Restaurant%2C+Bypass+Rd.%2C+San+Vicente%2C+Tarlac+City&amp;ctz=Asia%2FManila" target="_blank" rel="noopener">Add to Calendar</a><a href="https://maps.app.goo.gl/hYEvdNAvRUYPMJAL7" target="_blank" rel="noopener">Direction</a></div>
+            <p class="dress-code"><strong>SMART CASUAL/SEMI-FORMAL ATTIRE.</strong> Guests are instructed to wear the color motif listed below:</p>
+            <div class="color-motif" aria-label="Wedding color motif">
+              <button class="motif-item" type="button" data-attire-color="espresso" aria-expanded="false" aria-controls="attire-gallery"><span class="motif-swatch" style="--swatch: var(--motif-1)" aria-hidden="true"></span><span>Espresso</span></button>
+              <button class="motif-item" type="button" data-attire-color="chocolate" aria-expanded="false" aria-controls="attire-gallery"><span class="motif-swatch" style="--swatch: var(--motif-2)" aria-hidden="true"></span><span>Chocolate</span></button>
+              <button class="motif-item" type="button" data-attire-color="mocha" aria-expanded="false" aria-controls="attire-gallery"><span class="motif-swatch" style="--swatch: var(--motif-3)" aria-hidden="true"></span><span>Mocha</span></button>
+              <button class="motif-item" type="button" data-attire-color="champagne" aria-expanded="false" aria-controls="attire-gallery"><span class="motif-swatch" style="--swatch: var(--motif-4)" aria-hidden="true"></span><span>Champagne</span></button>
+              <button class="motif-item" type="button" data-attire-color="cream" aria-expanded="false" aria-controls="attire-gallery"><span class="motif-swatch" style="--swatch: var(--motif-5)" aria-hidden="true"></span><span>Cream</span></button>
+            </div>
+            <div class="attire-gallery" id="attire-gallery" aria-live="polite" aria-label="Attire photos">
+              <img data-attire-image="1" loading="lazy" alt="" />
+              <img data-attire-image="2" loading="lazy" alt="" />
+            </div>
+            <p class="venue"><span class="pin" aria-hidden="true">+</span> <a class="venue-link" href="https://maps.app.goo.gl/hYEvdNAvRUYPMJAL7" target="_blank" rel="noopener noreferrer">Bypass Rd., San Vicente, Tarlac City, Hermanos Restaurant</a></p>
+            <img class="venue-image" src="images/hermanos.jpeg" alt="Hermanos Restaurant, Tarlac City" onerror="this.onerror=null; this.src='assets/venue-map.svg';" />
+          </article>
+          <article class="event-card countdown-card" aria-live="polite">
+            <div class="event-number">02</div>
+            <p class="event-kicker">Counting down to our day</p>
+            <h3>Until We Say I Do</h3>
+            <div class="countdown" data-countdown data-target="2026-10-24T15:00:00+08:00">
+              <div><strong data-unit="days">0</strong><span>Days</span></div>
+              <div><strong data-unit="hours">0</strong><span>Hours</span></div>
+              <div><strong data-unit="minutes">0</strong><span>Minutes</span></div>
+              <div><strong data-unit="seconds">0</strong><span>Seconds</span></div>
+            </div>
+            <p class="countdown-complete" data-countdown-complete hidden>Today is the day!</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section finer-details-section" id="finer-details" aria-labelledby="finer-details-title">
+        <div class="section-heading"><p class="eyebrow">A few helpful notes</p><h2 id="finer-details-title">The Finer Details</h2></div>
+        <div class="finer-details-grid">
+          <article><h3>Can I Bring Someone With Me?</h3><p>Due to limited space and seating, only the guests named in the invitation may attend, helping ensure everyone has a comfortable experience.</p></article>
+          <article><h3>Privacy Note:</h3><p>As this is an intimate wedding, please keep our invitation private. We look forward to celebrating with you!</p></article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title"><div class="section-heading"><h2 id="gallery-title">Our Gallery</h2></div><div class="gallery-grid"><figure><img src="assets/gallery-1.svg" alt="Soft garden landscape placeholder" /><figcaption>Where our next chapter begins</figcaption></figure><figure><img src="assets/gallery-2.svg" alt="Warm evening sky placeholder" /><figcaption>Under the stars</figcaption></figure><figure><img src="assets/gallery-3.svg" alt="Botanical detail placeholder" /><figcaption>Little moments, always</figcaption></figure></div></section>
+
+      <section class="section parents-section" id="parents" aria-labelledby="parents-title">
+        <div class="section-heading"><p class="eyebrow">With love and gratitude</p><h2 id="parents-title">Parents</h2></div>
+        <div class="parents-grid">
+          <article><h3>Bride's Parents</h3><p>Jose L. Mariano Jr.</p><p>Cristina Pascual</p></article>
+          <article><h3>Groom's Parents</h3><p>Menandro De Leon</p><p>Araceli De Leon</p></article>
+        </div>
+      </section>
+
+      <section class="section sponsors-section" id="principal-sponsors" aria-labelledby="sponsors-title">
+        <div class="section-heading"><p class="eyebrow">Standing with us</p><h2 id="sponsors-title">Principal Sponsors</h2></div>
+        <div class="sponsors-list"><p>Bert Gamboa</p><p>Zenaida Cañada</p><p>Merlita Yumul</p><p>Josie Navarro Jaime</p><p>Romel</p></div>
+      </section>
+
+    </main>
+
+    <p class="closing-line">We would be delighted if you could celebrate with us!</p>
+    <footer class="site-footer"><span>JB &amp; Joanna</span></footer>
+  </body>
+</html>
